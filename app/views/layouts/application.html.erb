@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Language" content="zh-tw">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>5irehands</title>
+
+		<link rel="shortcut icon" href="/title_icon.ico">
+  		<%= stylesheet_link_tag    "application", :media => "all" %>
+  		<%= javascript_include_tag "application" %>
+  		<%= csrf_meta_tags %>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<!-- navigation bar -->
+			<nav>
+				<%= render "nav" %>
+			</nav>
+
+			<!-- main section -->
+			<div class="main">
+				<%= yield %>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<footer id="footer">
+			<div class="container">
+				<span>Copyright &copy; 2012-2013 by 5irehands Studio</span>
+			</div>
+		</footer>
+
+	</body>
+</html>

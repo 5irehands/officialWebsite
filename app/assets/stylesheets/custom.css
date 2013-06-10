@@ -1,0 +1,58 @@
+html {
+	height: 100%
+}
+
+body {
+	height: 100%;
+	padding-top: 70px
+}
+
+.image {
+	text-align: center;
+}
+
+.wrap {
+	min-height: 100%
+}
+
+.main {
+	overflow: auto;
+	padding-bottom: 150px
+}
+
+#footer {
+	position: relative;
+	border-width: 1px 0 0;
+	border-radius: 0 0 0 0;
+	padding-left: 0;
+	padding-right: 0;
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+	margin-top: -150px;
+	height: 150px;
+	padding: 12px 0 12px 0;
+	text-align: center;
+	background-color: #222222;
+	color: #FFFFFF;
+	clear: both
+}
+
+.article {
+	padding: 0 20px 20px 20px
+}
+
+img.middle {
+	width: 150px;
+	height: 200px;
+}
+
+.hero-unit {
+	background-color: #D83557;
+	color: #FFFFFF;
+	text-align: center
+}
+
+.service {
+	margin-left: 40px;
+	margin-right: -30px;
+	color: #D83557
+}

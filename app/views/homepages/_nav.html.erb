@@ -1,0 +1,21 @@
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<%= link_to "5irehands", root_path, :class => "brand" %>
+			
+			<div class="nav-collapse collapse">
+				<ul class="nav main_nav">
+					<li id="main_nav1"><%= link_to "首頁", root_path %></li>
+					<li id="main_nav2"><%= link_to "關於我們", about_path %></li>
+					<li id="main_nav3"><%= link_to "作品集", product_path %></li>
+					<li id="main_nav4"><%= link_to "聯絡我們", contact_path %></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
