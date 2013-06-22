@@ -12,5 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-1.10.1.min
 //= require bootstrap
 //= require custom
