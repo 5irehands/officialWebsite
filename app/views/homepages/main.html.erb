@@ -20,28 +20,13 @@
 	<div class="row">
 
 		<!-- 這是Rails的寫法，我用迴圈去把所有的值給印出來，＠services是要在controller中main這個action的定義中宣告的一個實例變數，用來宣告出實例變數的類別就是祥哥要負責的Model，而title跟description都是類別裡的屬性 -->
-		<% if false %>
+		
 		<% @services.each do |service| %>
-			<div class="span4">
+			<div class="span4 service">
 				<h2><%= service.title %></h2>
 				<p><%= service.description %></p>
 			</div>
 		<% end %>
-		<% end %>
-
-		<!-- hard code -->
-		<div class="span4 service">
-			<h2>社群經營行銷</h2>
-			<p>利用網際網路達成特定目標的行銷方式，行銷手法包含部落格行銷、社群經營、平台曝光等等，企業主以更少的行銷成本達到更高的效益。</p>
-		</div>
-		<div class="span4 service">
-			<h2>網站架設</h2>
-			<p>我們擁有絕佳的設計與技術團隊，以目前最火紅的Web框架「Rails」為主要開發框架，在不可思議的短時間內可以快速完成一個兼具質感、效能與安全的網站。</p>
-		</div>
-		<div class="span4 service">
-			<h2>部落客行銷</h2>
-			<p></p>
-		</div>
 
 	</div>
 </div>

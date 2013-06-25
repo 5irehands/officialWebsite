@@ -1,25 +1,20 @@
 <div id="team">
-	<div class="row">
-		<div class="span12 article">
-			<h4>Franky Wu</h4>
-			<p>Founder</p>
-			<p>forefeel741114@gmail.com</p>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="span12 article">
-			<h4>Nono Ni</h4>
-			<p>Front-end Engineer</p>
-			<p>noni2she@gmail.com</p>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="span12 article">
-			<h4>Wils Wei</h4>
-			<p>Back-end Engineer</p>
-			<p>noni2she@gmail.com</p>
-		</div>
-	</div>
+	
+	<% @profiles.each do |profile| %>
+		<% if profile.id%2 == 1 %>
+			<div class="row">
+				<div class="span6 article">
+					<h4><%= profile.name %></h4>
+					<p><%= profile.position %></p>
+					<p><%= profile.email %></p>
+				</div>
+		<% else %>
+				<div class="span6 article">
+					<h4><%= profile.name %></h4>
+					<p><%= profile.position %></p>
+					<p><%= profile.email %></p>
+				</div>
+			</div>
+		<% end %>
+	<% end %>
 </div>
